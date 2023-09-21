@@ -14,7 +14,7 @@ let -> variável de escopo de bloco
 const -> const de escopo de bloco
 */
 
-const nome = "Max Verstappen"; // Constante
+const nome = "Max Webber"; // Constante
 let ano = 2023; // variável de escopo local
 var curso = "Técnico em Desenvolvimento de sistemas"; // Variável global
 
@@ -24,6 +24,10 @@ document.write('<h2 style="color: blue;">Recuperando valores e concatenação</h
 
 
 // 1ª Digitação (Aqui)
+document.write("<strong>Meu Nome é: </strong> "+nome+" <br>")
+document.write("<strong>Estamos no ano de: </strong> "+ano+" <br>")
+document.write("<strong>Meu Curso Preferido É: </strong> "+curso+" <br>")
+
 
 
 
@@ -37,7 +41,8 @@ document.write("________________________________________________________________
 document.write('<h2 style="color: blue;">String literal/ Template String (Usando a crase)</h2><br>');
 
 // 2ª Digitação (Aqui)
-
+//Concatenação Template literal (Crase)
+document.write(`Eu sou o: <strong>${nome}</strong> e em:  <strong>${ano}</strong> estou estudando no curso: <strong>${curso}</strong> <br>`)
 
 document.write("__________________________________________________________________<br>");
 
@@ -64,3 +69,5 @@ let total = preco * quantidade;
 
 
 // 3ª Digitação (Aqui)
+
+document.write(`Temos atualmente no estoque do produto: <strong>${produto}</strong> Seu preço é: <strong>${preco}</strong> <br> Quantidade escolhida: <strong>${quantidade}</strong> Total:<strong>${total}</strong>`)
